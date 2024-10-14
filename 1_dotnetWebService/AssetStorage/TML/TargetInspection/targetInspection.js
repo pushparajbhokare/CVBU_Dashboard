@@ -113,7 +113,7 @@ function processRefresh(userData) {
             //$(format.date(result[0].to_date, "dd-MM-yyyy"));
 
             $("#target_title").append(
-                `<h6 class="text-white text-capitalize ps-3">Inspection report From: ${FromDate} To: ${ToDate} </h6>`
+                `<h6 class="text-white text-capitalize ps-">Inspection report From: ${FromDate} To: ${ToDate} </h6>`
             );
             dataTable.clear().draw();
             dataTable.rows.add(result);

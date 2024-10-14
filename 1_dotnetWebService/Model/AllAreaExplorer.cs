@@ -1,6 +1,6 @@
 ﻿namespace dotnetWebService.Model
 {
-    public class AllAreaExplorer
+    public struct AllAreaExplorer
     {
         public string cplan { get; set; }
         public string area { get; set; }
@@ -13,6 +13,6 @@
         public string plant { get; set; }
         public string Day { get; set; }
         public string Date { get; set; }
-
     }
+
 }

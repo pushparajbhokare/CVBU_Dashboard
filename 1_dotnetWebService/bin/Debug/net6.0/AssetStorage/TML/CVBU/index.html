@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="../../assets/img/apple-icon.png"
-    />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="apple-touch-icon"
+          sizes="76x76"
+          href="../../assets/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
@@ -21,17 +17,13 @@
     <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
 
     <!-- CSS Files -->
-    <link
-      id="pagestyle"
-      href="../../assets/css/material-dashboard.css?v=3.0.4"
-      rel="stylesheet"
-    />
+    <link id="pagestyle"
+          href="../../assets/css/material-dashboard.css?v=3.0.4"
+          rel="stylesheet" />
     <!-- additional custom CSS Files -->
-    <link
-      id="customstyle"
-      href="../../assets/css/other_addition.css"
-      rel="stylesheet"
-    />
+    <link id="customstyle"
+          href="../../assets/css/other_addition.css"
+          rel="stylesheet" />
 
     <script src="../../JS/jquery-1.9.1.min.js"></script>
     <!-- Datetime JQuery -->
@@ -40,15 +32,32 @@
     <script src="../../JS/jquery-ui.min.js"></script>
 
     <style>
-      .plant_card {
-        margin-top: 50px;
-      }
+        .plant_card {
+            margin-top: 50px;
+        }
 
-      .plant_card:first-child {
-        margin-top: 0;
-      }
+            .plant_card:first-child {
+                margin-top: 0;
+            }
+
+        /*#CVBU_container {
+            max-height: 300px;*/ /* Set maximum height for scrolling */
+            /*overflow-y: auto;*/ /* Enable vertical scrolling */
+            /*border: 1px solid #ccc;*/ /* Optional: Add a border for better visibility */
+            /*padding: 10px;*/ /* Optional: Add some padding */
+            /*background-color: #f9f9f9;*/ /* Optional: Background color */
+        /*}*/
+        /*#plant_container {
+            max-height: 300px;*/ /* Set maximum height for scrolling */
+            /*overflow-y: auto;*/ /* Enable vertical scrolling */
+            /*border: 1px solid #ccc;*/ /* Optional: Add a border for better visibility */
+            /*padding: 10px;*/ /* Optional: Add some padding */
+            /*background-color: #f9f9f9;*/ /* Optional: Background color */
+        /*}*/
+
     </style>
-  </head>
+    
+</head>
 
   <body class="g-sidenav-show bg-gray-200" code="CVBU.VIEW_CVBU">
     <div class="loader" id="AjaxLoader" style="display: none">
@@ -71,7 +80,7 @@
       <!-- End Navbar -->
 
       <div class="container-fluid py-4">
-        <div class="row">
+        <div class="row" style=" position:fixed">
           <!-- (<span class="font-weight-bolder">+15%</span>) -->
           <div
             class="col-lg-8 col-md-4 mt-4 mb-4 overall_summary"
