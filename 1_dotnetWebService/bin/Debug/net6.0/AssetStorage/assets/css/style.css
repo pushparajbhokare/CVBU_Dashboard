@@ -166,7 +166,7 @@
 
 
 .wrap {
-    width: 100px;
+    width: 75px;
     min-width: 22px;
     /* border: 1px solid var(--green); */
     display: flex;
@@ -627,6 +627,14 @@ img.display {
     border-radius: 15px;
     background-color: #a0c4ff33;
 }
+.QDT-NA{
+    box-shadow: #9a9c9fc7 1.95px 1.95px 2.6px;
+    border: 1px solid #a2a4a5;
+    color: #3f4142;
+    font-weight: 700;
+    border-radius: 15px;
+    background-color: #95979b33
+}
   .CTQ-E{
     box-shadow: #cafbff 1.95px 1.95px 2.6px;
     border: 1px solid #7ce7f0;
@@ -686,4 +694,30 @@ img.display {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+   }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
     }

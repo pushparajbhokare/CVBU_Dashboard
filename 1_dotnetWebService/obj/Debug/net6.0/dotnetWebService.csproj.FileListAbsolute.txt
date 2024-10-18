@@ -1358,6 +1358,7 @@ D:\Micraft Solution\CVBU_Dashboard\1_dotnetWebService\obj\Debug\net6.0\dotnetWeb
 D:\Micraft Solution\CVBU_Dashboard\1_dotnetWebService\obj\Debug\net6.0\dotnetWebService.genruntimeconfig.cache
 D:\Micraft Solution\CVBU_Dashboard\1_dotnetWebService\obj\Debug\net6.0\ref\dotnetWebService.dll
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\QdasConfig.ini
+D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\cert123.pfx
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\AssetStorage\TML\Permissions\managePermissions.js
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\AssetStorage\assets\css\material-dashboard.css
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\AssetStorage\assets\css\material-dashboard.css.map
@@ -1858,7 +1859,6 @@ D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\AssetStorage\TML\si
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\AssetStorage\TML\signin\style.css
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\AssetStorage\TML\TargetInspection\index.html
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\AssetStorage\TML\TargetInspection\targetInspection.js
-D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\cert123.pfx
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\dotnetWebService.exe
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\dotnetWebService.deps.json
 D:\HEXAGON\CVBU\MainCVBU\1_dotnetWebService\bin\Debug\net6.0\dotnetWebService.runtimeconfig.json

@@ -8,7 +8,7 @@ const Objquadrants = {
   QuadIV: "Stable & Un-Capable"
 };
 const ObjSetClasses = {
-    critical: "CTQ-C", major: "CTQ-M", emission:"CTQ-E"
+    critical: "CTQ-C", major: "CTQ-M", emission: "CTQ-E", other:"CTQ-Other", na: "QDT-NA"
 }
 
 //************************ AjAx Loader *********************************//
@@ -67,7 +67,23 @@ const navData = [
     imgPath: "data_exploration.svg",
     permission_code: "TARGET_INSPECTION.VIEW_TARGET_INSPECTION",
     navPath: "TargetInspection",
-  },
+   },
+  //{
+  //    id: 7,
+  //    title: "Add Category",
+  //    imgPath: "add_document.svg",
+  //    permission_code: "CATEGORY.ADD_CATEGORY",
+  //    navPath: "Category",
+  //  },
+  //  {
+  //      id: 8,
+  //      title: "Add Document",
+  //      imgPath: "add_document.svg",
+  //      permission_code: "DOCUMENT.ADD_DOCUMENT",
+  //      navPath: "Document",
+  //  },
+
+ 
   // { id: 7, title: "2X2 Risk Matrix", imgPath: "table_view.svg", permission_code: "2X2_MATRIX.VIEW_2x2_MATRIX", navPath: "2x2matrix" }
 ];
 
@@ -201,7 +217,8 @@ function showSidebar() {
   });
 
   for (i = 0; i < navData.length; i++) {
-    if (sessionStorage.getItem("page") == navData[i].title) {
+      if (sessionStorage.getItem("page") == navData[i].title) {
+          console.log(navData[i].title);
       $(`#ListItem li:nth-child(${i + 1}) a`).addClass(
         "active bg-gradient-primary"
       );
@@ -713,13 +730,17 @@ function Show_CharChart() {
 //*********************************Class images******************* */
 function getClassification(mclass) {
     if (mclass == ObjSetClasses.emission) {
-    return `<div class="rounded  d-flex justify-content-center  align-items-center" style=" box-shadow: #cafbff 1.95px 1.95px 2.6px; border:1px solid #7ce7f0 ;background-color:#9bf6ff33"> <h6  class="d-flex mb-0 py-1 justify-content-center align-items-center" style="color:#31d2e2 !important" >E</h6></div>`;
+    return `<div class="rounded ctq-m d-flex justify-content-center  align-items-center" style=" box-shadow: #cafbff 1.95px 1.95px 2.6px; border:1px solid #7ce7f0 ;background-color:#9bf6ff33"> <h6  class="d-flex mb-0 py-1 justify-content-center align-items-center" style="color:#31d2e2 !important" >E</h6></div>`;
   } else if (mclass == ObjSetClasses.major) {
-    return `<div class="rounded  d-flex justify-content-center align-items-center" style=" box-shadow: #c7dcff 1.95px 1.95px 2.6px; border:1px solid #a8e5f5 ;background-color:#a0c4ff33"> <h6 class="d-flex mb-0 py-1 justify-content-center align-items-center"  style="color:#3475e1 !important" >M</h6></div>`;
+    return `<div class="rounded ctq-m d-flex justify-content-center align-items-center" style=" box-shadow: #c7dcff 1.95px 1.95px 2.6px; border:1px solid #a8e5f5 ;background-color:#a0c4ff33"> <h6 class="d-flex mb-0 py-1 justify-content-center align-items-center"  style="color:#3475e1 !important" >M</h6></div>`;
   } else if (mclass == ObjSetClasses.critical) {
-    return `<div class="rounded  d-flex justify-content-center align-items-center" style=" box-shadow: #ffadff 1.95px 1.95px 2.6px; border:1px solid #f9a4f9 ;background-color:#ffc6ff33"> <h6 class="d-flex mb-0 py-1 justify-content-center align-items-center " style="color:#f500f5 !important" >C</h6></div>`;
-  }
-  return `Others`;
+        return `<div class="rounded ctq-c d-flex justify-content-center align-items-center" style=" box-shadow: #ffadff 1.95px 1.95px 2.6px; border:1px solid #f9a4f9 ;background-color:#ffc6ff33"> <h6 class="d-flex mb-0 py-1 justify-content-center align-items-center " style="color:#f500f5 !important" >C</h6></div>`;
+    } else if (mclass == ObjSetClasses.other) {
+        return `<div class="rounded ctq-other  d-flex justify-content-center align-items-center" style=" box-shadow: #ffadff 1.95px 1.95px 2.6px; border:1px solid #f9a4f9 ;background-color:#ffc6ff33"> <h6 class="d-flex mb-0 py-1 justify-content-center align-items-center " style="color:#f500f5 !important" >Other</h6></div>`;
+    } else if (mclass == ObjSetClasses.na) {
+    return `<div class="rounded qdt-na  d-flex justify-content-center align-items-center" style=" box-shadow: #ffadff 1.95px 1.95px 2.6px; border:1px solid #f9a4f9 ;background-color:#ffc6ff33"> <h6 class="d-flex mb-0 py-1 justify-content-center align-items-center " style="color:#f500f5 !important" >NA</h6></div>`;
+    } 
+  //return `Others`;
 }
 
 function roundNumber(num) {
@@ -1073,6 +1094,8 @@ function LogOut() {
 
 //*******************************************  Total Count of Matrix   **************************************** */
 function TotalCount(test) {
+    console.log("test count");
+    console.log(test);
 
   const specifiedQuadrants = [
     Objquadrants.QuadI,
@@ -1094,5 +1117,7 @@ function TotalCount(test) {
       quadrantCounts[`quad${index + 1}`]++;
     }
   });
+    console.log("quadrant count details");
+    console.log(quadrantCounts);
   return quadrantCounts;
 }
